@@ -6,9 +6,10 @@
 
 ```
 git clone  https://github.com/gabrielsarti-impacta/ope.git
+cd ope
 ```
 
-* Se não estiver na branch **Develop**, mude para ela
+* Mude para a branch **Develop**
 
 ```
 git checkout develop
