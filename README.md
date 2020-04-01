@@ -1,5 +1,22 @@
 # Projeto de OPE da Faculdade Impacta de Tecnologia
 
+
+## Branchs Principais
+
+### Master
+
+Aqui se encontra o projeto testado e validado
+
+### Develop
+
+É aqui que deve ser feito todo o desenvolvimento
+
+### Documentation
+
+Todos os artefatos que compõem a documentação do projeto se encontram aqui
+
+
+
 ## Workflow
 
 * Para começar, clone o repositório
@@ -39,19 +56,5 @@ git push origin develop
 ```
 
 
-
-## Branchs Principais
-
-### Master
-
-Aqui se encontra o projeto testado e validado
-
-### Develop
-
-É aqui que deve ser feito todo o desenvolvimento
-
-### Documentation
-
-Todos os artefatos que compõem a documentação do projeto se encontram aqui
 
 
