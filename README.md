@@ -49,8 +49,5 @@ Aqui se encontra o projeto testado e validado
 
 É aqui que deve ser feito todo o desenvolvimento
 
-### Documentation
-
-Todos os artefatos que compõem a documentação do projeto se encontram aqui
 
 
