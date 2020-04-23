@@ -1,0 +1,44 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>130</x><y>15</y><w>210</w><h>100</h></coordinates><panel_attributes>Paciente
+--
+Nome
+Código carteirinha 
+Endereço Residencial
+Telefone
+ID Plano de Saúde</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>560</x><y>25</y><w>210</w><h>90</h></coordinates><panel_attributes>Plano de Saúde
+--
+ID
+Nome da operadora
+Tipo de plano
+--
+Cobertura()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>960</x><y>55</y><w>100</w><h>140</h></coordinates><panel_attributes>SimpleClass</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>520</x><y>475</y><w>210</w><h>110</h></coordinates><panel_attributes>Agenda de Exame
+--
+Código Exame
+Data
+Horário
+Reserva
+--
+Confirmar Exame()
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>130</x><y>275</y><w>200</w><h>80</h></coordinates><panel_attributes>Exame
+--
+Código 
+Nome </panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>330</x><y>65</y><w>250</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=n
+m2=1</panel_attributes><additional_attributes>10;10;230;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>120</x><y>495</y><w>210</w><h>90</h></coordinates><panel_attributes>Solicitação de Exame
+--
+Protocolo
+Nome Paciente
+Código Exame
+Arquivo Exame
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>530</x><y>275</y><w>210</w><h>70</h></coordinates><panel_attributes>Valor Particular
+--
+Código Exame
+Valor</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>525</y><w>220</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes><additional_attributes>200;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>220</x><y>105</y><w>40</w><h>190</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;-
+m1=1
+m2=n</panel_attributes><additional_attributes>10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>210</x><y>345</y><w>40</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2= 0</panel_attributes><additional_attributes>10;150;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>320</x><y>305</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=1</panel_attributes><additional_attributes>10;10;210;10</additional_attributes></element></diagram>
