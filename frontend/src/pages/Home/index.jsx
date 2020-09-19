@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './style.css';
+import "./style.scss";
 
 const Home = () => {
-    return (
-        <div className="home">
-            <Link to="/alo">Ir para a página 404 \o/</Link>
-        </div>
-    )
-}
+  return (
+    <div className="home">
+      <Link to="/patient/create">Criar paciente</Link>
+    </div>
+  );
+};
 
 export default Home;
