@@ -1,5 +1,65 @@
 $block: create-patient;
 
+@import "../../styles/colors.scss";
+
+.#{$block} {
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  &__title {
+    background: $light-green;
+    color: $white;
+    font-size: 70px;
+    padding: 20px 0;
+  }
+  &__form {
+    margin-top: 40px;
+  }
+  &__form-inner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__input-group {
+    margin: 30px 50px 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  &__label {
+    font-size: 20px;
+  }
+  &__input {
+    width: 400px;
+    font-size: 16px;
+    margin-top: 5px;
+    // margin-left: 10px;
+    border: 1px solid $light-green;
+    padding: 5px;
+  }
+  &__button {
+    margin: 30px 0;
+    width: 130px;
+    height: 50px;
+    border: 1px solid $light-green;
+    background: $light-green;
+    color: $white;
+    padding: 10px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+      background: $white;
+      border: 2px solid $light-green;
+      color: $light-green;
+      // border-radius: 60px;
+    }
+  }
+}
+
 :export {
   block: $block;
 }

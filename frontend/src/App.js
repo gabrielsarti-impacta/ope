@@ -10,6 +10,10 @@ import CreatePatient from "./pages/CreatePatient";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+// styles
+import "./styles/globals.scss";
+import "./styles/fonts.scss";
+
 function App() {
   return (
     <>
