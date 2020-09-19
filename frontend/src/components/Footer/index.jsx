@@ -1,14 +1,14 @@
-import React from 'react';
-import { Link } from 'react-router-dom'
+import React from "react";
+import { Link } from "react-router-dom";
 
-import './style.css';
+import "./style.scss";
 
 const Footer = () => {
-    return (
-        <div className="footer">
-            <Link to="/">Ir para a página inicial \o/</Link>
-        </div>
-    )
-}
+  return (
+    <div className="footer">
+      <Link to="/">Ir para a página inicial \o/</Link>
+    </div>
+  );
+};
 
 export default Footer;
