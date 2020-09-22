@@ -1,7 +1,11 @@
 package br.com.exdon.ope
 
+import android.app.Dialog
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.Color.GREEN
+import android.os.AsyncTask
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -12,6 +16,7 @@ import androidx.appcompat.widget.SearchView
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.actionbar.*
 import kotlinx.android.synthetic.main.activity_menu.*
+import kotlinx.android.synthetic.main.progress_bar.*
 
 
 class MenuActivity : DebugActivity() {
@@ -20,6 +25,8 @@ class MenuActivity : DebugActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_menu)
+
+
 
         // acessar parametros da intnet
         // intent é um atributo herdado de Activity
@@ -75,6 +82,29 @@ class MenuActivity : DebugActivity() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
+   class NetworkTask(var activity: MenuActivity) : AsyncTask<Void, Void, Void>() {
+
+       var dialog = Dialog(activity, android.R.style.Theme_Translucent_NoTitleBar)
+
+       override fun onPreExecute() {
+           val view = activity.layoutInflater.inflate(R.layout.progress_bar, null)
+           dialog.setContentView(view)
+           dialog.setCancelable(false)
+           dialog.show()
+           super.onPreExecute()
+       }
+       override fun doInBackground(vararg params: Void?): Void? {
+           Thread.sleep(10000)
+           return null
+       }
+
+       override fun onPostExecute(result: Void?) {
+           super.onPostExecute(result)
+           dialog.dismiss()
+       }
+
+   }
+
     private fun openNextActivity() {
         val intent = Intent(this, SegundaActivity::class.java)
         startActivity(intent)
@@ -117,6 +147,7 @@ class MenuActivity : DebugActivity() {
         if  (id == R.id.action_buscar) {
             Toast.makeText(context, "Botão de buscar", Toast.LENGTH_LONG).show()
         } else if (id == R.id.action_atualizar) {
+            NetworkTask(this).execute()
             Toast.makeText(context, "Botão de atualizar", Toast.LENGTH_LONG).show()
         } else if (id == R.id.action_adicionar) {
             openNextActivity()
