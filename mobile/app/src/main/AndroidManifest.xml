@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+package="br.com.exdon.ope">
+
+<application
+    android:allowBackup="true"
+    android:icon="@mipmap/ic_launcher"
+    android:label="@string/app_name"
+    android:roundIcon="@mipmap/ic_launcher_round"
+    android:supportsRtl="true"
+    android:theme="@style/AppTheme">
+    <activity android:name=".testeActivity"></activity>
+    <activity
+        android:name=".TerceiraActivity"
+        android:parentActivityName=".MenuActivity" />
+    <activity
+        android:name=".SettingsActivity"
+        android:label="@string/title_activity_settings" />
+    <activity
+        android:name=".SegundaActivity"
+        android:parentActivityName=".MenuActivity" />
+    <activity android:name=".DebugActivity" />
+    <activity android:name=".MenuActivity" />
+    <activity android:name=".ForgotPasswordActivity" />
+    <activity android:name=".CreateAccountActivity" />
+    <activity android:name=".LoginActivity" />
+    <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+</application>
+
+</manifest>
