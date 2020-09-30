@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">473576291556-b621c8q62p80loeqi6828n8d9t298vcj.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://opeauth.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">473576291556</string>
+    <string name="google_api_key" translatable="false">AIzaSyA2amwTWMcwWM_2z9WHyX0rYC5EChq65Eg</string>
+    <string name="google_app_id" translatable="false">1:473576291556:android:b9c6a67501b2c2452800f1</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyA2amwTWMcwWM_2z9WHyX0rYC5EChq65Eg</string>
+    <string name="google_storage_bucket" translatable="false">opeauth.appspot.com</string>
+    <string name="project_id" translatable="false">opeauth</string>
+</resources>

@@ -1,0 +1,150 @@
+[
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_atualizar_black.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\ic_atualizar_black.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_voltar_black.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\ic_voltar_black.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_forgot_password.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_atualizar.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\ic_atualizar.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo_login.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-mdpi\\logo_login.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_segunda.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\activity_segunda.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_logo.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-mdpi\\logo.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_button_bg.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\login_button_bg.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_edittext_bg.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\login_edittext_bg.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_create_account.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\activity_create_account.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn_menu_bg.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\btn_menu_bg.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\xml_root_preferences.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\xml\\root_preferences.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\activity_menu.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_actionbar.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\actionbar.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_buscar_black.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\ic_buscar_black.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_main.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\menu\\menu_main.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_settings_activity.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\settings_activity.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login_bg.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\login_bg.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_adicionar_black.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\drawable\\ic_adicionar_black.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_terceira.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\activity_terceira.xml"
+    },
+    {
+        "merged": "D:\\Users\\AndroidStudioProject\\ope\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_debug.xml.flat",
+        "source": "D:\\Users\\AndroidStudioProject\\ope\\app\\src\\main\\res\\layout\\activity_debug.xml"
+    }
+]
