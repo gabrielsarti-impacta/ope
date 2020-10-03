@@ -1,0 +1,36 @@
+$block: navbar;
+
+@import "../../styles/colors.scss";
+
+.#{$block} {
+  background-color: $light-green;
+  height: 100vh;
+  width: 80px;
+  position: fixed;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__item {
+    margin: 15px 0;
+  }
+  &__link {
+    display: block;
+  }
+  &__icon {
+    width: 30px;
+    height: 30px;
+    fill: $white;
+  }
+  &__icon-main {
+    height: 36px;
+    fill: $white;
+  }
+}
+
+:export {
+  block: $block;
+}

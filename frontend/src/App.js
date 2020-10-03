@@ -5,30 +5,33 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import CreatePatient from "./pages/CreatePatient";
+import RequireExam from "./pages/RequireExam";
 
 // components
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
 
 // styles
 import "./styles/globals.scss";
 import "./styles/fonts.scss";
 
 function App() {
+  localStorage.setItem("userId", "123");
   return (
     <>
       <BrowserRouter>
-        {/* <Header /> */}
-        <Switch>
-          <Route path="/" exact={true} component={Home} />
-          <Route
-            path="/patient/create"
-            exact={true}
-            component={CreatePatient}
-          />
-          <Route path="*" exact={true} component={NotFound} />
-        </Switch>
-        {/* <Footer /> */}
+        <NavBar />
+        <div className="bild-wrapper">
+          <Switch>
+            <Route path="/" exact={true} component={Home} />
+            <Route
+              path="/patient/create"
+              exact={true}
+              component={CreatePatient}
+            />
+            <Route path="/exam/create" exact={true} component={RequireExam} />
+            <Route path="*" exact={true} component={NotFound} />
+          </Switch>
+        </div>
       </BrowserRouter>
     </>
   );

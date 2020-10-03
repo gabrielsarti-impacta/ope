@@ -1,0 +1,17 @@
+$block: home;
+
+.#{$block} {
+  &__icon-block {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10%;
+  }
+  &__icon {
+    width: 150px;
+  }
+}
+
+:export {
+  block: $block;
+}
