@@ -1,0 +1,66 @@
+$block: view-requests;
+
+@import "../../styles/colors.scss";
+
+.#{$block} {
+  &__wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  &__title {
+    background: $light-green;
+    color: $white;
+    font-size: 70px;
+    padding: 20px 0;
+  }
+  &__table {
+    margin: 30px 0;
+    width: 100%;
+    border: 1px solid $gray;
+  }
+  &__table-header {
+    padding: 0 30px;
+    color: $white;
+    height: 50px;
+    border-bottom: 1px solid $gray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $dark-green;
+  }
+  &__table-row {
+    padding: 0 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:hover {
+      background-color: $light-green;
+    }
+    &:not(:last-child) {
+      border-bottom: 1px solid $gray;
+    }
+  }
+  &__table-cell {
+    text-align: left;
+    flex: 3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 5px;
+    &:first-child {
+      flex: 3;
+    }
+    &:nth-child(3) {
+      flex: 2;
+    }
+    &:last-child {
+      flex: 1;
+    }
+  }
+}
+
+:export {
+  block: $block;
+}

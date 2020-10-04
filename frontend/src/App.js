@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import CreatePatient from "./pages/CreatePatient";
 import RequireExam from "./pages/RequireExam";
+import ViewRequests from "./pages/ViewRequests";
 
 // components
 import NavBar from "./components/NavBar";
@@ -29,6 +30,7 @@ function App() {
               component={CreatePatient}
             />
             <Route path="/exam/create" exact={true} component={RequireExam} />
+            <Route path="/exam" exact={true} component={ViewRequests} />
             <Route path="*" exact={true} component={NotFound} />
           </Switch>
         </div>

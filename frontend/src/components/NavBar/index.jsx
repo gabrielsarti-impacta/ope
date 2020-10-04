@@ -35,7 +35,7 @@ const NavBar = ({}) => {
             <RequireExamIcon className={`${block}__icon`} />
           </Link>
         </li>
-        <li title="Solicitar Exame" className={`${block}__item`}>
+        <li title="Visualizar Solicitações" className={`${block}__item`}>
           <Link to="/exam" className={`${block}__link`}>
             <ViewRequestsIcon className={`${block}__icon`} />
           </Link>
