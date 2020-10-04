@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import cn from "classnames";
 
 import { ReactComponent as AddUserIcon } from "../../assets/add-user.svg";
-import { ReactComponent as RequireExamIcon } from "../../assets/require-exam.svg";
+import { ReactComponent as RequireExamIcon } from "../../assets/add-document.svg";
+import { ReactComponent as ViewRequestsIcon } from "../../assets/document.svg";
 import BildIcon from "../../assets/bild.png";
 
 const { block } = sassVar;
@@ -32,6 +33,11 @@ const NavBar = ({}) => {
         <li title="Solicitar Exame" className={`${block}__item`}>
           <Link to="/exam/create" className={`${block}__link`}>
             <RequireExamIcon className={`${block}__icon`} />
+          </Link>
+        </li>
+        <li title="Solicitar Exame" className={`${block}__item`}>
+          <Link to="/exam" className={`${block}__link`}>
+            <ViewRequestsIcon className={`${block}__icon`} />
           </Link>
         </li>
       </ul>
