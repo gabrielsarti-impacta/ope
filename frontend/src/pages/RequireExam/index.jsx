@@ -21,14 +21,50 @@ const RequireExam = () => {
   const [fieldError, setFieldError] = useState(true);
   const [redirect, setRedirect] = useState(null);
 
+  const examsResponse = {
+    data: [
+      {
+        id: "1",
+        name: "Exame 1",
+      },
+      {
+        id: "2",
+        name: "Exame 2",
+      },
+      {
+        id: "3",
+        name: "Exame 3",
+      }
+    ],
+  };
+
+  const patientsResponse = {
+    data: [
+      {
+        id: "1",
+        name: "Paciente 1",
+      },
+      {
+        id: "2",
+        name: "Paciente 2",
+      },
+      {
+        id: "3",
+        name: "Paciente 3",
+      }
+    ],
+  };
+
   useEffect(() => {
     async function loadExams() {
-      const response = await api.get("/exam");
+      // const response = await api.get("/exam");
+      const response = examsResponse;
       setExams(response.data);
     }
 
     async function loadPatients() {
-      const response = await api.get("/patient");
+      // const response = await api.get("/patient");
+      const response = patientsResponse;
       setPatients(response.data);
     }
 
@@ -46,8 +82,13 @@ const RequireExam = () => {
     const userId = localStorage.getItem("userId");
 
     if (date !== "" && examId !== "" && patientId !== "") {
+      let newDateArray = 0;
+      newDateArray = date.split("T");
+      newDateArray[1] = newDateArray[1] + ":00";
+      const newDate = newDateArray.join(' ');
+      setDate(newDate);
       console.log({
-        date,
+        newDate,
         examId,
         patientId,
         userId,
@@ -116,8 +157,9 @@ const RequireExam = () => {
                   className={`${block}__input`}
                   id="require-exam-name"
                 >
+                  <option></option>
                   {exams.map((exam) => {
-                    return <option>{exam}</option>;
+                    return <option id={`patient-dropdown--new-exam--${exam.id}`}>{exam.name}</option>;
                   })}
                 </select>
               </div>
@@ -134,8 +176,9 @@ const RequireExam = () => {
                   className={`${block}__input`}
                   id="require-exam-patient"
                 >
+                  <option></option>
                   {patients.map((patient) => {
-                    return <option>{patient}</option>;
+                    return <option id={`patient-dropdown--new-exam--${patient.id}`}>{patient.name}</option>;
                   })}
                 </select>
               </div>
