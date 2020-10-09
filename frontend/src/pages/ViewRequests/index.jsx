@@ -17,8 +17,8 @@ const ViewRequests = () => {
   const [fieldError, setFieldError] = useState(true);
 
   useEffect(() => {
-    async function loadExams() {
-      // const response = await api.get("/exam");
+    async function loadExamsMock() {
+      // const response = await api.get("/");
       // setExams(response.data);
 
       // response.map((item) => {
@@ -29,18 +29,27 @@ const ViewRequests = () => {
           id: "123",
           name: "Nome do exame",
           patient: "Sérgio Barros",
-          date: new Date(946692000000),
+          date: new Date(),
         },
         {
           id: "123",
           name: "Nome do exame",
           patient: "Gabriel Sarti",
-          date: new Date(946692000000),
+          date: new Date(),
         },
       ]);
     }
 
-    loadExams();
+    async function loadExams() {
+      const response = await api.get("/");
+      setExams(response.data);
+
+      response.map((item) => {
+        item.date = new Date(Date.parse(item.date));
+      });
+    }
+
+    loadExamsMock();
   }, []);
 
   const handleModalClose = () => {
@@ -61,7 +70,7 @@ const ViewRequests = () => {
               <div className={`${block}__table-cell`}>Exame</div>
               <div className={`${block}__table-cell`}>Paciente</div>
               <div className={`${block}__table-cell`}>Data</div>
-              <div className={`${block}__table-cell`}>Ações</div>
+              <div className={`${block}__table-cell`}>Status</div>
             </div>
             {exams.map((exam) => {
               return (

@@ -6,9 +6,11 @@ import sassVar from "./style.scss";
 
 import Modal from "../../components/Modal";
 
+import api from '../../services/api';
+
 const { block } = sassVar;
 
-const CreatePatient = ({}) => {
+const CreatePatient = ({ }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [cpf, setCpf] = useState("");
@@ -25,6 +27,7 @@ const CreatePatient = ({}) => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
+
     if (
       name !== "" &&
       email !== "" &&
@@ -35,6 +38,7 @@ const CreatePatient = ({}) => {
       birth !== "" &&
       gender !== ""
     ) {
+      // Mock antes da conexão com o backend
       console.log({
         name,
         email,
@@ -48,12 +52,36 @@ const CreatePatient = ({}) => {
       setFieldError(false);
       setModalMessage("Paciente criado com sucesso");
       setModalOpen(true);
+      // fim do mock
+      // createPatient();
     } else {
       setFieldError(true);
       setModalMessage("Preencha todos os campos");
       setModalOpen(true);
     }
   };
+
+  const createPatient = async () => {
+    const response = await api.post('/', {
+      name,
+      email,
+      cpf,
+      rg,
+      phone,
+      address,
+      birth,
+      gender,
+    });
+    if (response.status === 200) {
+      setFieldError(false);
+      setModalMessage("Paciente criado com sucesso");
+      setModalOpen(true);
+    } else {
+      setFieldError(true);
+      setModalMessage("Erro ao criar o paciente");
+      setModalOpen(true);
+    }
+  }
 
   const handleModalClose = () => {
     setModalOpen(false);

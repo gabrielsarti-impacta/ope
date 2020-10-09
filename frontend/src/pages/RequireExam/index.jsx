@@ -11,6 +11,7 @@ import api from "../../services/api";
 const { block } = sassVar;
 
 const RequireExam = () => {
+  const [userId, setUserId] = useState("");
   const [date, setDate] = useState("");
   const [examId, setExamId] = useState("");
   const [patientId, setPatientId] = useState("");
@@ -21,6 +22,7 @@ const RequireExam = () => {
   const [fieldError, setFieldError] = useState(true);
   const [redirect, setRedirect] = useState(null);
 
+  // Mock antes da conexão com o backend
   const examsResponse = {
     data: [
       {
@@ -37,7 +39,6 @@ const RequireExam = () => {
       }
     ],
   };
-
   const patientsResponse = {
     data: [
       {
@@ -54,16 +55,15 @@ const RequireExam = () => {
       }
     ],
   };
-
   useEffect(() => {
+    setUserId(localStorage.getItem("userId"));
+
     async function loadExams() {
-      // const response = await api.get("/exam");
       const response = examsResponse;
       setExams(response.data);
     }
 
     async function loadPatients() {
-      // const response = await api.get("/patient");
       const response = patientsResponse;
       setPatients(response.data);
     }
@@ -72,6 +72,21 @@ const RequireExam = () => {
     loadPatients();
   }, []);
 
+  // fim do mock
+
+  /** 
+    * Conexão com o backend
+    * 
+    
+      useEffect(() => {
+        async function loadExamsAndPatients() {
+          const response = await api.get('/');
+          setExams(response.data.exams);
+          setPatients(response.data.patients);
+        }
+        loadExamsAndPatients();
+      }, []);
+    */
   const minDate = new Date();
   var weekInMilliseconds = 7 * 24 * 60 * 60 * 1000;
   minDate.setTime(minDate.getTime() + weekInMilliseconds);
@@ -79,14 +94,13 @@ const RequireExam = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    const userId = localStorage.getItem("userId");
-
     if (date !== "" && examId !== "" && patientId !== "") {
       let newDateArray = 0;
       newDateArray = date.split("T");
       newDateArray[1] = newDateArray[1] + ":00";
       const newDate = newDateArray.join(' ');
       setDate(newDate);
+      // Mock antes da conexão com o backend
       console.log({
         newDate,
         examId,
@@ -96,12 +110,32 @@ const RequireExam = () => {
       setFieldError(false);
       setModalMessage("Exame solicitado com sucesso");
       setModalOpen(true);
+      // fim do mock
+      // createNewExam();
     } else {
       setFieldError(true);
       setModalMessage("Preencha todos os campos");
       setModalOpen(true);
     }
   };
+
+  const createNewExam = async () => {
+    const response = await api.post('/', {
+      date,
+      examId,
+      patientId,
+      userId,
+    });
+    if (response.status === 200) {
+      setFieldError(false);
+      setModalMessage("Exame solicitado com sucesso");
+      setModalOpen(true);
+    } else {
+      setFieldError(true);
+      setModalMessage("Erro ao solicitar o exame");
+      setModalOpen(true);
+    }
+  }
 
   const handleModalClose = () => {
     setModalOpen(false);
