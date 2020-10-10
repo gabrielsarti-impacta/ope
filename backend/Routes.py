@@ -61,8 +61,10 @@ def appointment_by_user():
     except Exception:
         return jsonify(status=500),500
         
-
+@app.route('/')
+def index():
+    return 'Index Page!'
 
 #Alterar para a conexão com servidor.
 if __name__ == '__main__':
-    app.run(host = 'localhost', port = 5002, debug = True)
+    app.run()
